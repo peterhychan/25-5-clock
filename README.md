@@ -1,5 +1,7 @@
 # 25-5-Clock
 
+![app](https://upload.cc/i1/2020/03/19/1NDlSb.png)
+
 This project was deployed on [now.sh](https://25-5-clock.now.sh).
 
 ## Available Scripts
