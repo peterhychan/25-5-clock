@@ -1,0 +1,51 @@
+[debug] [2020-03-19T07:12:53.746Z] ----------------------------------------------------------------------
+[debug] [2020-03-19T07:12:53.748Z] Command:       /usr/local/bin/node /Users/peterhychan/.config/yarn/global/node_modules/.bin/firebase init
+[debug] [2020-03-19T07:12:53.748Z] CLI Version:   7.14.0
+[debug] [2020-03-19T07:12:53.748Z] Platform:      darwin
+[debug] [2020-03-19T07:12:53.748Z] Node Version:  v12.14.1
+[debug] [2020-03-19T07:12:53.748Z] Time:          Thu Mar 19 2020 00:12:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-03-19T07:12:53.749Z] ----------------------------------------------------------------------
+[debug] [2020-03-19T07:12:53.749Z] 
+[debug] [2020-03-19T07:12:53.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-19T07:12:53.756Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/peterhychan/Desktop/25-5-clock
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-03-19T07:15:03.172Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-03-19T07:15:03.384Z] <<< HTTP RESPONSE 400
+[debug] [2020-03-19T07:15:03.385Z] <<< HTTP RESPONSE BODY
+[debug] [2020-03-19T07:15:03.386Z] HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+[debug] [2020-03-19T07:15:03.562Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at module.exports (/Users/peterhychan/.config/yarn/global/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/Users/peterhychan/.config/yarn/global/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/Users/peterhychan/.config/yarn/global/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.<anonymous> (/Users/peterhychan/.config/yarn/global/node_modules/firebase-tools/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at IncomingMessage.<anonymous> (/Users/peterhychan/.config/yarn/global/node_modules/firebase-tools/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:312:28)
+    at IncomingMessage.emit (events.js:228:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:475:20)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
